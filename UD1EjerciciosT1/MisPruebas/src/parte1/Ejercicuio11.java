@@ -12,7 +12,7 @@ public class Ejercicuio11 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Ecribe un valor en pesetas");
 		Integer ptas = scan.nextInt();
-		System.out.println(ptas + " pesetas = " + String.format("%.2f",(ptas/166.0)) + " €");
+		System.out.println(ptas + " pesetas = " + Math.ceil(ptas/166.0*100)/100.0 + " €");
 		
 		scan.close();	
 	}

@@ -18,7 +18,7 @@ public class Ejercicio12 {
 		Double manzanasVentanas = scan.nextDouble();
 		System.out.println("Escribe cantidad de peras que ha ventado en este año en kilo");
 		Double perasVentanas = scan.nextDouble();
-		System.out.println("Tu beneficio anual es " + String.format("%.2f",((manzanasVentanas*MANZANAS_PRECIO)+(perasVentanas*PERAS_PRECIO))) + "€");
+		System.out.println("Tu beneficio anual es " + Math.ceil(((manzanasVentanas*MANZANAS_PRECIO)+(perasVentanas*PERAS_PRECIO))*100)/100.0 + "€");
 		
 		scan.close();
 	}

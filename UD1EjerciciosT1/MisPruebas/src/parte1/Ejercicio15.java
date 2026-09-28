@@ -14,7 +14,7 @@ public class Ejercicio15 {
 		System.out.println("Escribe el precio de un producto sin IVA");
 		Double precioSinIva = scan.nextDouble();
 		Double precioConIva = precioSinIva + (precioSinIva*IVA/100);
-		System.out.println("Precio del producto con IVA es " + String.format("%.2f",precioConIva) + "€");
+		System.out.println("Precio del producto con IVA es " + Math.ceil(precioConIva*100)/100.0 + "€");
 
 		scan.close();
 	}

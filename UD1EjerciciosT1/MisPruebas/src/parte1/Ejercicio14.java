@@ -18,7 +18,7 @@ public class Ejercicio14 {
 			notaDeTrimestre = scan.nextInt();
 			sumaDeNotas += notaDeTrimestre;
 		}
-		System.out.println("Tu nota media\nBoletín de calificaciones: " + (sumaDeNotas/3) + "\nExpediente académico: " + String.format("%.2f",(sumaDeNotas/3.0)));
+		System.out.println("Tu nota media\nBoletín de calificaciones: " + (sumaDeNotas/3) + "\nExpediente académico: " + Math.ceil(sumaDeNotas/3.0*100)/100.0);
 		
 		scan.close();
 	}
